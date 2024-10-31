@@ -23,7 +23,7 @@ public class TelaCadastro extends JFrame{
     private final JPasswordField passSenha;
     private final JPasswordField passConfSenha;
     
-    //validacoes de usuario e cadstro corretos
+    //validacoes de usuario e cadastro corretos
     private boolean usuarioValido;
     private boolean cadastroValido;
     //string de mensaagens
@@ -100,14 +100,14 @@ public class TelaCadastro extends JFrame{
             //setters
             usu.setNome(txtNome.getText());
             usu.setUsuario(txtUsuario.getText());
-            usu.setSenha(passSenha.getName());
+            usu.setSenha(passSenha.getText());
             
             //validacoes de preenchimento dos dados
             if("".equals(usu.getNome())){
                 mensagemJOption = "Campo nome do usuario precisa ser informado!";
                 mensagemTipo = 0;
             }else if("".equals(usu.getUsuario())){
-                mensagemJOption = "Campo usuario do usuario precisa ser informado!";
+                mensagemJOption = "Campo usuario precisa ser informado!";
             }else if("".equals(usu.getSenha())){
                 mensagemJOption = "Campo senha do usuario precisa ser informado!";
                 mensagemTipo = 0;
