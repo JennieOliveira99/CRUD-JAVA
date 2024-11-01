@@ -29,7 +29,7 @@ public class TelaInicio extends JFrame {
         setBounds(700, 300, 526, 313);
 
         tela = new JPanel();
-        tela.setBackground(SystemColor.red);
+        tela.setBackground(SystemColor.gray);
         setContentPane(tela);
         tela.setLayout(null);
 

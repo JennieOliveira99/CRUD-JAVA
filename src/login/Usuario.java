@@ -169,8 +169,9 @@ public class Usuario {
             //criando parametro de retorno
             banco.stmt = banco.con.createStatement();
             //executando alteração no banco de dados
+            // testeeee aplicando o MD5 na senha nova
             banco.stmt.execute("UPDATE usuario SET nome = '" + nome
-                    + "', senha = '" + "' WHERE usuario = '"
+                    + "', senha = md5('" + senha + "') WHERE usuario = '"
                     + usuario + "'");
             resultAlteracao = true;
         } catch (SQLException ec) {

@@ -1,10 +1,5 @@
-
 package login;
 
-/**
- *
- * @author pc-jelly
- */
 public class TestaTelaCadastro {
 
     /**
